@@ -1,0 +1,503 @@
+fetch("https://return.gst.gov.in/returns/auth/api/rolestatus?rtn_prd=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/dashboard",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://payment.gst.gov.in/pages/payment/generatechallan.html", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://payment.gst.gov.in/payment/auth/generatedchallan",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://payment.gst.gov.in/payment/auth/challan/generate", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "content-type": "application/json;charset=UTF-8",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://payment.gst.gov.in/payment/auth/create/challan",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": "{\"cgst_fee_amt\":10,\"mod\":\"RET\",\"igst_tax_amt\":0,\"cgst_int_amt\":0,\"sgst_tax_amt\":0,\"gstin\":\"33AAXCA0332P1ZC\",\"cess_tax_amt\":0,\"cess_int_amt\":0,\"sgst_fee_amt\":10,\"igst_int_amt\":0,\"cgst_tax_amt\":0,\"sgst_int_amt\":0,\"ret_url\":\"//return.gst.gov.in/returns/auth/gstr3b/payment\",\"chln_rsn\":\"AOP\",\"chln_prd\":null,\"cgst_pen_amt\":null,\"cgst_oth_amt\":null,\"cgst_tot_amt\":10,\"igst_pen_amt\":null,\"igst_fee_amt\":null,\"igst_oth_amt\":null,\"igst_tot_amt\":0,\"sgst_pen_amt\":null,\"sgst_oth_amt\":null,\"sgst_tot_amt\":10,\"cess_pen_amt\":null,\"cess_fee_amt\":null,\"cess_oth_amt\":null,\"cess_tot_amt\":0,\"total_amt\":20,\"total_amt_word\":\"Rupees Twenty Only\",\"constBusn\":\"PVT\",\"stNam\":\"Tamil Nadu\",\"ut\":\"N\",\"payment_mod\":\"EPY\",\"sub_pay_mod\":\"\",\"bank_cd\":\"\"}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://payment.gst.gov.in/lang/languages.json", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://payment.gst.gov.in/payment/auth/create/challan",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/pages/returns/gstr3b/elgitc/elgitc.html", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b/elgITC",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/internalapi/getRclmAvl?action=clsbal&gstin=33AAXCA0332P1ZC", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b/elgITC",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/checkLocking?gstin=33AAXCA0332P1ZC&rtn_prd=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b/elgITC",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/formdetails?rtn_prd=082023&rtn_typ=GSTR3B", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/isgstr1fil?gstin=33AAXCA0332P1ZC&rtn_prd=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/getr1r3bliab?gstin=33AAXCA0332P1ZC&retPeriod=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/sysint?gstin=33AAXCA0332P1ZC&rtn_prd=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/getDetails?gstin=33AAXCA0332P1ZC&retPeriod=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/save", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "content-type": "application/json;charset=UTF-8",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"sysint_updated\":\"\",\"gstin\":\"33AAXCA0332P1ZC\",\"ret_period\":\"082023\",\"sup_details\":{\"osup_det\":{\"txval\":0,\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},\"osup_zero\":{\"txval\":500000,\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},\"osup_nil_exmp\":{\"txval\":0,\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},\"isup_rev\":{\"txval\":0,\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},\"osup_nongst\":{\"txval\":0,\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0}},\"inter_sup\":{\"unreg_details\":[],\"comp_details\":[],\"uin_details\":[]},\"itc_elg\":{\"itc_avl\":[{\"ty\":\"IMPG\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},{\"ty\":\"IMPS\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},{\"ty\":\"ISRC\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},{\"ty\":\"ISD\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},{\"ty\":\"OTH\",\"iamt\":2776.41,\"camt\":3516.58,\"samt\":3516.58,\"csamt\":0}],\"itc_rev\":[{\"ty\":\"RUL\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},{\"ty\":\"OTH\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0}],\"itc_net\":{\"iamt\":2776.41,\"camt\":3516.58,\"samt\":3516.58,\"csamt\":0},\"itc_inelg\":[{\"ty\":\"RUL\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},{\"ty\":\"OTH\",\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0}]},\"intr_ltfee\":{\"intr_details\":{\"iamt\":0,\"camt\":0,\"samt\":0,\"csamt\":0},\"ltfee_details\":{\"iamt\":0,\"camt\":10,\"samt\":10,\"csamt\":0}},\"tt_val\":{\"tt_pay\":0,\"tt_csh_pd\":0,\"tt_itc_pd\":0},\"qn\":{\"q1\":\"N\",\"q2\":\"Y\",\"q3\":\"Y\",\"q4\":\"Y\",\"q5\":\"Y\",\"q6\":\"Y\",\"q7\":\"N\"}}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+HTTP/1.1 200 OK
+date: Tue, 19 Sep 2023 13:01:15 GMT
+content-type: application/json;charset=ISO-8859-1
+content-length: 62
+set-cookie: AuthToken=9990b61ec2a3475595253123b20790aa; Domain=.gst.gov.in; Path=/; Secure; HttpOnly
+pragma: no-cache
+expires: Tue, 19 Sep 2023 13:01:14 GMT
+cache-control: no-cache
+content-security-policy: default-src 'self' *.gst.gov.in; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.gst.gov.in; img-src 'self' *.gst.gov.in data: blob: filesystem:; style-src 'self' 'unsafe-inline' *.gst.gov.in; font-src 'self' *.gst.gov.in; child-src 'self' *.gst.gov.in; object-src 'self' *.gst.gov.in; media-src 'self' blob: mediastream; connect-src 'self' *.gst.gov.in wss://127.0.0.1:1585 wss://127.0.0.1:2095 wss://127.0.0.1:2568 wss://127.0.0.1:2868 wss://127.0.0.1:4587
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Origin,Content-Type,Accept,Pragma,Expires
+access-control-allow-credentials: true
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains
+cache-control: private,no-cache
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+Set-Cookie: TS0176043b=0140752c73c80b7360c0da149ebfb8d9d9c24319495b98f10db9934297fae134423821be4115f1bd7efa0d4745c4e580b6bbb53385; Path=/; Domain=.return.gst.gov.in; HttpOnly; Secure; 
+
+POST /returns/auth/api/gstr3b/save HTTP/1.1
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Content-Length: 1301
+Content-Type: application/json;charset=UTF-8
+Cookie: ak_bmsc=05F06EBD85E517451ABDD826E4D9D1EC~000000000000000000000000000000~YAAQLbopF5VTdIeKAQAAU016rRUKcaMoqwM0hjBVqGJmj5w+rlO9KgCmW5AtI2/NuLSTv/n3IHPwBNSz7lDjgCHpdzJ79eCWDHoT4WnQJQdm3trBFWJbruiDOFEkEglX7c1SQGVM8cVxii+2RNOpiHrUGpUj1FpY4/3lqZWUvNk+QfPd31kOg+0SNOJuhnEUxWEnuPYAzR++61VlBNIi/y/lFFLpmvbH9pBXvBL8Scus9qi8v2LBFJyf7YQXaPz5r8c5chy1yiXNJ7tA+pKavRKCpgBBxmM9zG40/coaFRuwc/2hCKvp8HRTSBS7YTsVljLuCG+0ezX0QSSgECNeUc4PD39UlJRlP9tSqNt6VARatYccSAzbjZOFAiouFNrG; AuthToken=9990b61ec2a3475595253123b20790aa; UserName=abstractit; EntityRefId=T330002084454; Lang=en; bm_sv=A0AD0E8896D712B4055675D7EF6701CC~YAAQLbopF+CfdIeKAQAAj9t+rRUF+5wgTwOxk7oZ8vSF6X4Ou69S7K2UbILjeDb+Rx8b8jxscAuu8Vp7OCQGpDd5AH6qZYa+0525rkUoIgoyEreOXdKOOt4cW0HNFVZUQA0zmT1qgKKFm0lwihKQwNoX6UnXR+/OxTmZ+JqmkXgR+0W+4jmz7sFdJgMpzjFvqQaZZDlSX43Xd5rw04PjROwE1lXKYp8S5Z6yuYbblfaWtEuP+CjbKcpPkqBXHCZn~1; TS0176043b=0140752c73c80b7360c0da149ebfb8d9d9c24319495b98f10db9934297fae134423821be4115f1bd7efa0d4745c4e580b6bbb53385
+Host: return.gst.gov.in
+Origin: https://return.gst.gov.in
+Referer: https://return.gst.gov.in/returns/auth/gstr3b
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+sec-ch-ua: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/getTxnStatus?gstin=33AAXCA0332P1ZC&retPeriod=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/summary?rtn_prd=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/keepalive", {
+  "headers": {
+    "accept": "application/json, text/javascript, */*; q=0.01",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/setOffStatus?ret_period=082023&getITC=Y", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b/payment",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/api/gstr3b/taxpayble?rtn_prd=082023", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b/payment",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://payment.gst.gov.in/services/api/ustatus", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://payment.gst.gov.in/payment/auth/create/challan",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://payment.gst.gov.in/lang/payment/translation-en.json", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://payment.gst.gov.in/payment/auth/create/challan",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://payment.gst.gov.in/payment/auth/get/details", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://payment.gst.gov.in/payment/auth/create/challan",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://payment.gst.gov.in/master/allstates", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://payment.gst.gov.in/payment/auth/create/challan",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/pages/returns/gstr3b/elgitc/elgitc.html", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b/elgITC",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://return.gst.gov.in/returns/auth/internalapi/getRclmAvl?action=clsbal&gstin=33AAXCA0332P1ZC", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://return.gst.gov.in/returns/auth/gstr3b/elgITC",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+
+
+
+
